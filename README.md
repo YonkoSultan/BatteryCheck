@@ -9,6 +9,8 @@ A program to send you a notification when your battery gets almost full, there a
 
 - You can put this script into startup using "pythonw" which then will work everytime you turn on your computer.
 
+- The default language is Arabic
+
 برنامج يرسل لك إشعار عندما تقترب البطارية من الإمتلاء, هنالك لغتان :
 
  العربية (ar)
@@ -17,3 +19,4 @@ A program to send you a notification when your battery gets almost full, there a
 
 - يمكنك تغيير متغير اللغة إما ل "ar" أو "en"
 - يمكنك وضع الأداة في ال startup بإستعمال "pythonw", بذلك ستعمل الأداة بمجرد تشغيلك للجهاز
+- اللغة الإفتراضية هي اللغة العربية
