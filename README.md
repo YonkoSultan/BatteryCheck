@@ -7,6 +7,8 @@ A program to send you a notification when your battery gets almost full, there a
 
 - You can change the language variable to either "ar" or "en"
 
+- This script is for Windows only, but it might be available for Linux in the next version ( if it existed )
+
 - You can put this script into startup using "pythonw" which then will work everytime you turn on your computer.
 
 - The default language is Arabic
@@ -18,5 +20,6 @@ A program to send you a notification when your battery gets almost full, there a
 
 
 - يمكنك تغيير متغير اللغة إما ل "ar" أو "en"
+- هذه الأداة متاحة لنظام ويندوز فقط، لكن ربما يتم إتاحتها لنظام لينكس في الإصدار القادم ( إن وجد )
 - يمكنك وضع الأداة في ال startup بإستعمال "pythonw", بذلك ستعمل الأداة بمجرد تشغيلك للجهاز
 - اللغة الإفتراضية هي اللغة العربية
