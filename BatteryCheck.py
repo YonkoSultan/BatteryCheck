@@ -6,7 +6,7 @@
 # Twitter : SultanCYB
 # Email : sultanxx575@gmail.com
 
-from subprocess import run
+from psutil import sensors_battery
 from plyer import notification
 from time import sleep
 
@@ -14,10 +14,7 @@ from time import sleep
 language = "ar"
 
 while (1):
-    battery = run(
-        "WMIC PATH Win32_Battery Get BatteryStatus, EstimatedChargeRemaining", capture_output=True
-    ).stdout.decode('utf-8').split()
-
+    battery = [sensors_battery()[0], sensors_battery()[2]]
     ''' I used subprocess module to use the terminal; which can let me write this command
     to show the battery percentage and if the pc is charging or not
 
@@ -29,11 +26,12 @@ while (1):
 
     then i splitted the output to get the numbers and get rid of whitespace, other unimportant things'''
 
-    battery_percent = int(battery[3])
-    charging = int(battery[2])
+    battery_percent = battery[0]
+    charging = battery[1]
 
-    if battery_percent in range(91, 101) and charging == 2:  # you can change this range
-
+    if battery_percent in range(95, 101) and charging:
+                        # you can change this range
+                        
         if language == 'ar':
             notification.notify(
                 app_name="منبه البطارية",
