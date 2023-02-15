@@ -14,24 +14,13 @@ from time import sleep
 language = "ar"
 
 while (1):
-    battery = [sensors_battery()[0], sensors_battery()[2]]
-    ''' I used subprocess module to use the terminal; which can let me write this command
-    to show the battery percentage and if the pc is charging or not
 
-    the commands are:
-    BatteryStatus : charging or discharging
-    EstimatedChargeRemaining : the battery percentage
-
-    then i used decode method because the output is bytes
-
-    then i splitted the output to get the numbers and get rid of whitespace, other unimportant things'''
-
-    battery_percent = battery[0]
-    charging = battery[1]
+    battery_percent = sensors_battery()[0]
+    charging = sensors_battery()[2]
 
     if battery_percent in range(95, 101) and charging:
-                        # you can change this range
-                        
+        # you can change this range
+
         if language == 'ar':
             notification.notify(
                 app_name="منبه البطارية",
@@ -52,5 +41,3 @@ while (1):
 
     else:
         sleep(300)  ## sleep for 5 minutes if it didnt reach the range yet
-
-## check the effectivenss of both programs
