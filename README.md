@@ -1,5 +1,5 @@
 # BatteryCheck
-A program to send you a notification when your battery gets almost full, there are two languages :
+A program to send you a notification when your battery get full, there are two languages :
  
  Arabic (ar)
  English (en)
@@ -13,7 +13,7 @@ A program to send you a notification when your battery gets almost full, there a
 
 - The default language is Arabic
 
-برنامج يرسل لك إشعار عندما تقترب البطارية من الإمتلاء, هنالك لغتان :
+برنامج يرسل لك إشعار عندما تمتلىء البطارية, هنالك لغتان :
 
  العربية (ar)
  الإنجليزية (en)
