@@ -25,7 +25,7 @@ while (1):
             notification.notify(
                 app_name="منبه البطارية",
                 title="منبه البطارية",
-                message="البطارية شبه ممتلئة",
+                message="البطارية ممتلئة",
                 app_icon=""  # if you have an icon you can give the path here
             )
 
@@ -33,7 +33,7 @@ while (1):
             notification.notify(
                 app_name="Battery check",
                 title="Battery check",
-                message="Your battery is almost full",
+                message="Your battery is full",
                 app_icon=""  # if you have an icon you can give the path here
             )
 
