@@ -3,7 +3,7 @@
 
 # made by Sultan Bazher
 
-# Twitter : SultanCYB
+# Twitter : SultanCYBB
 # Email : sultanxx575@gmail.com
 
 from psutil import sensors_battery
