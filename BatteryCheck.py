@@ -3,7 +3,7 @@
 
 # made by Sultan Bazher
 
-# Twitter : SultanCYBB
+# Twitter : ThatYonko
 # Email : sultanxx575@gmail.com
 
 from psutil import sensors_battery
@@ -18,7 +18,7 @@ while (1):
     battery_percent = sensors_battery()[0]
     charging = sensors_battery()[2]
 
-    if battery_percent in range(95, 101) and charging:
+    if battery_percent in range(97, 101) and charging:
         # you can change this range
 
         if language == 'ar':
@@ -28,7 +28,6 @@ while (1):
                 message="البطارية ممتلئة",
                 app_icon=""  # if you have an icon you can give the path here
             )
-
         else:
             notification.notify(
                 app_name="Battery check",
@@ -39,5 +38,8 @@ while (1):
 
         sleep(1200)  ## sleep for 20 minutes if it reached the range
 
+        # ^ don't play with this, you might get annoying amount of notifications at once
+
     else:
+
         sleep(300)  ## sleep for 5 minutes if it didnt reach the range yet
