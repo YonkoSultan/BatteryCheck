@@ -4,7 +4,6 @@
 # made by Sultan Bazher
 
 # Twitter : ThatYonko
-# Email : sultanxx575@gmail.com
 
 from psutil import sensors_battery
 from plyer import notification
